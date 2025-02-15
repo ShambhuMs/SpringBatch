@@ -7,7 +7,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class CustomerProcessor implements ItemProcessor<Customer,Customer> {
     @Override
-    public Customer process(Customer customer) throws Exception {
-        return customer;
+    public Customer process(Customer customer) throws Exception { //It filters the data
+        /*if (customer.getCountry().equals("United States")) {*/
+            return customer;
+       /* }else {
+            return null;
+        }*/
     }
 }

@@ -3,6 +3,7 @@ package com.shambhu.SpringBatch.config;
 import com.shambhu.SpringBatch.dto.Customer;
 import com.shambhu.SpringBatch.repo.CustomerRepo;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
